@@ -1,21 +1,11 @@
-version: "3.8"
-
 services:
   l4d2:
     image: left4devops/l4d2:latest
     container_name: l4d2
-    network_mode: "host"
+    ports:
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
     volumes:
       - ./data:/home/steam/l4d2-dedicated
     restart: unless-stopped
-    command: >
-      /home/steam/steamcmd/l4d2/srcds_run
-      -game left4dead2
-      -console
-      -autoupdate
-      -steam_dir /home/steam/steamcmd
-      -steamcmd_script /home/steam/steamcmd/l4d2_ds.txt
-      -ip 0.0.0.0
-      -port 27015
-      +sv_setsteamaccount YOUR_STEAM_TOKEN
 

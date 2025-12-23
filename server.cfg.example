@@ -1,6 +1,3 @@
 hostname "My L4D2 Server"
 sv_password ""
 sv_lan 0
-
-// Set the default map on server start
-map c1m1_hotel

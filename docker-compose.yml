@@ -8,5 +8,5 @@ services:
     volumes:
       - ./server.cfg:/cfg/server.cfg
     restart: unless-stopped
-    environment:
-      - DEFAULT_MAP=c1m1_hotel
+    env_file:
+      - .env

@@ -6,3 +6,10 @@ admins_simple.ini
 # Addons
 addons/**
 !addons/.keep
+
+# Sourcemod
+cfg/sourcemod/**
+!cfc/sourcemod/sm_warmode_off.cfg
+!cfc/sourcemod/sm_warmode_on.cfg
+!cfc/sourcemod/sourcemode.cfg
+!cfc/sourcemod/admins_simple.ini.example

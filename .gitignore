@@ -1,6 +1,7 @@
 # Settings
 server.cfg
 .env
+admins_simple.ini
 
 # Addons
 addons/**

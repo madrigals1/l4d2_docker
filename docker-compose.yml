@@ -7,6 +7,7 @@ services:
       - "27015:27015/udp"
     volumes:
       - ./server.cfg:/cfg/server.cfg
+      - ./addons:/home/steam/l4d2/left4dead2/addons
     restart: unless-stopped
     env_file:
       - .env

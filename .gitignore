@@ -1,2 +1,7 @@
+# Settings
 server.cfg
 .env
+
+# Addons
+addons/**
+!addons/.keep

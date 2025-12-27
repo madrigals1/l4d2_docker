@@ -12,3 +12,6 @@ cfg/sourcemod/**
 !cfc/sourcemod/sm_warmode_off.cfg
 !cfc/sourcemod/sm_warmode_on.cfg
 !cfc/sourcemod/sourcemode.cfg
+
+# IDE
+.vscode

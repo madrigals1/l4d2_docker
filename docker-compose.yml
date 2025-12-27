@@ -3,8 +3,8 @@ services:
     image: left4devops/l4d2:latest
     container_name: l4d2
     ports:
-      - "27015:27015/tcp"
-      - "27015:27015/udp"
+      - "${PORT}:27015/tcp"
+      - "${PORT}:27015/udp"
     volumes:
       - ./cfg/server.cfg:/cfg/server.cfg
       - ./cfg/sourcemod:/cfg/sourcemod
